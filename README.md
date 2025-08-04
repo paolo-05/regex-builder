@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Regex Builder 🔧
 
-## Getting Started
+A powerful and intuitive web application for building regular expressions through a visual interface. Create complex regex patterns by simply checking boxes - no need to memorize syntax!
 
-First, run the development server:
+![Regex Builder](https://img.shields.io/badge/built%20with-Next.js-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?logo=tailwind-css&logoColor=white)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Visual Regex Building**: Create regular expressions by toggling checkboxes instead of writing complex syntax
+- **Real-time Preview**: See your regex pattern update instantly as you make selections
+- **Pattern Testing**: Test your regex against sample text with detailed match results
+- **Multi-language Export**: Generate code snippets for JavaScript, Python, Go, Java, C#, PHP, Ruby, Rust, and Swift
+- **Conflict Detection**: Built-in validation to prevent incompatible pattern combinations
+- **Category Organization**: Options grouped by type (Character Types, Quantifiers, Anchors, etc.)
+- **Copy & Download**: Easy copying of patterns and downloading of code examples
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎯 How to Use
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Select Pattern Components**: Choose from various categories:
 
-## Learn More
+   - **Character Types**: Letters, digits, whitespace, word characters
+   - **Quantifiers**: One or more, zero or more, optional, exact counts
+   - **Anchors & Boundaries**: Start/end of string, word boundaries
+   - **Common Patterns**: Email, phone, URL, date patterns
+   - **Special Characters**: Punctuation, brackets, quotes, symbols
 
-To learn more about Next.js, take a look at the following resources:
+2. **Review Generated Pattern**: Your regex appears in real-time as you make selections
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Test Your Regex**: Enter test text to see matches highlighted with detailed results
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Export to Code**: Generate ready-to-use code snippets in your preferred programming language
 
-## Deploy on Vercel
+## 🛠️ Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Framework**: [Next.js 15](https://nextjs.org/) with App Router
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [Radix UI](https://www.radix-ui.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **State Management**: React useState/useMemo hooks
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎨 Key Components
+
+### RegexGenerator
+
+Core class that handles:
+
+- Pattern generation from selected options
+- Character class building
+- Anchor and quantifier application
+- Regex testing and validation
+
+### RegexBuilder
+
+Main UI component featuring:
+
+- Option selection interface
+- Real-time pattern preview
+- Conflict detection and warnings
+- Test functionality
+
+### LanguageExporter
+
+Generates code snippets for multiple programming languages with proper syntax and imports.
+
+## 🔄 Available Scripts
+
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/)
+
+- UI components from [Radix UI](https://www.radix-ui.com/)
+
+- Styled with [Tailwind CSS](https://tailwindcss.com/)
+
+- Icons by [Lucide](https://lucide.dev/)
+
+---
